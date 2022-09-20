@@ -9,14 +9,14 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Catalog App')),
+        title: const Center(child: Text('Catalog App')),
       ),
       body: Center(
         child: Container(
           child: Text("This is my first day out of $days of learning Flutter"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: const Drawer(),
     );
   }
 }
