@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
 
       routes: {
-        // "/": (context) => const HomePage(),
-        "/": (context) => const LoginPage(),
+        "/": (context) => const HomePage(),
+        "/LoginPage": (context) => const LoginPage(),
       },
     );
   }
