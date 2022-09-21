@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/pages/home_page.dart';
 import 'package:flutter_catalog/pages/login_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,15 +17,17 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(brightness: Brightness.dark),
 
       //this is for light theme
-      theme: ThemeData(primarySwatch: Colors.amber),
+      theme: ThemeData(
+          primarySwatch: Colors.amber,
+          fontFamily: GoogleFonts.lato().fontFamily),
 
       /*This would choose the default system theme. Set ThemeMode: 
       ThemeMode.light/dark to switch between light and dark themes.*/
       themeMode: ThemeMode.light,
 
       routes: {
-        "/": (context) => const HomePage(),
-        "/LoginPage": (context) => const LoginPage(),
+        "/": (context) => LoginPage(),
+        "/LoginPage": (context) => HomePage(),
       },
     );
   }
